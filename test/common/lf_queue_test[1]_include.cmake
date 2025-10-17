@@ -1,0 +1,5 @@
+if(EXISTS "/home/rwsa/Dev/HftEcosystem/test/common/lf_queue_test[1]_tests.cmake")
+  include("/home/rwsa/Dev/HftEcosystem/test/common/lf_queue_test[1]_tests.cmake")
+else()
+  add_test(lf_queue_test_NOT_BUILT lf_queue_test_NOT_BUILT)
+endif()
