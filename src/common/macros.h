@@ -4,10 +4,8 @@
 #include <iostream>
 
 #define ASSERT(cond, msg)                                 \
-  do                                                      \
-  {                                                       \
-    if (!(cond)) [[unlikely]]                             \
-    {                                                     \
+  do {                                                    \
+    if (!(cond)) [[unlikely]] {                           \
       std::cerr << "ASSERT FAILED: " << msg << std::endl; \
       exit(EXIT_FAILURE);                                 \
     }                                                     \
