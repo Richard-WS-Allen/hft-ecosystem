@@ -31,14 +31,5 @@ TEST(LfQueueTest, QueueExpectationsMet) {
   }
 }
 
-for (int i = 0; i < test_size; i++) {
-  const FooObj* obj_r = q.getNextRead();
-  ASSERT_NE(obj_r, nullptr);
-  ASSERT_EQ(obj_r->a, i);
-  q.updateNextRead();
-  ASSERT_EQ(q.size(), (test_size - (i + 1)));
-}
-}
-
 }  // namespace
 }  // namespace Common

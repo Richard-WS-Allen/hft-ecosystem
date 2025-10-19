@@ -37,16 +37,5 @@ TEST(MemPoolTest, DeallocationSuccess) {
   ASSERT_NE(to_dealloc, nullptr);
 }
 
-// Succeed alloc
-ASSERT_NE(to_dealloc, nullptr);
-// Fail next alloc
-ASSERT_EQ(pool.allocate(FooObj{1, 1}), nullptr);
-// Free space
-pool.deallocate(to_dealloc);
-to_dealloc = nullptr;
-to_dealloc = pool.allocate(FooObj{1, 1});
-ASSERT_NE(to_dealloc, nullptr);
-}
-
 }  // namespace
 }  // namespace Common
