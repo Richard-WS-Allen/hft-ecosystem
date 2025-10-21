@@ -1,0 +1,5 @@
+add_test([=[TimeUtilsTest.TestNanos]=]  /home/rwsa/Dev/HftEcosystem/test/common/time_util_test [==[--gtest_filter=TimeUtilsTest.TestNanos]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TimeUtilsTest.TestNanos]=]  PROPERTIES WORKING_DIRECTORY /home/rwsa/Dev/HftEcosystem/test/common SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[TimeUtilsTest.TestTimeStringFormatting]=]  /home/rwsa/Dev/HftEcosystem/test/common/time_util_test [==[--gtest_filter=TimeUtilsTest.TestTimeStringFormatting]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TimeUtilsTest.TestTimeStringFormatting]=]  PROPERTIES WORKING_DIRECTORY /home/rwsa/Dev/HftEcosystem/test/common SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  time_util_test_TESTS TimeUtilsTest.TestNanos TimeUtilsTest.TestTimeStringFormatting)

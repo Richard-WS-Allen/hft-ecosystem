@@ -32,8 +32,8 @@ class MemPool final {
 
   template <typename... Args>
   // Allocate next free memory block in pool and place the object.
-  // TODO: segmentation fault happens here, reconsider the use of a
-  // a vector of ObjBlock.
+  // TODO: segmentation fault happens here, but is suppressed when using
+  // address sanitizer.
   T* allocate(Args... args) noexcept {
     if (is_full_) [[unlikely]] {
       return nullptr;

@@ -1,0 +1,5 @@
+add_test([=[MemPoolTest.FullMemPoolReturnsNullptr]=]  /home/rwsa/Dev/HftEcosystem/test/common/mem_pool_test [==[--gtest_filter=MemPoolTest.FullMemPoolReturnsNullptr]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MemPoolTest.FullMemPoolReturnsNullptr]=]  PROPERTIES WORKING_DIRECTORY /home/rwsa/Dev/HftEcosystem/test/common SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[MemPoolTest.DeallocationSuccess]=]  /home/rwsa/Dev/HftEcosystem/test/common/mem_pool_test [==[--gtest_filter=MemPoolTest.DeallocationSuccess]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MemPoolTest.DeallocationSuccess]=]  PROPERTIES WORKING_DIRECTORY /home/rwsa/Dev/HftEcosystem/test/common SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  mem_pool_test_TESTS MemPoolTest.FullMemPoolReturnsNullptr MemPoolTest.DeallocationSuccess)

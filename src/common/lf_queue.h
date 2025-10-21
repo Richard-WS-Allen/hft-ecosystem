@@ -9,9 +9,8 @@ template <typename T>
 // Lock-free queue for single producer single consumer
 // queue operations. Must call update methods after read or
 // write operations.
-// TODO: Make this more robust. Consumer and producer
-// shouldn't be required to call the updates on tracking
-// variables.
+// TODO: Segmentation fault occurs in this class. But is suppressed
+// when using address sanitizer.
 class LfQueue final {
  public:
   LfQueue(size_t queue_size) : store_(queue_size, T()), max_size_{queue_size} {}

@@ -1,0 +1,5 @@
+if(EXISTS "/home/rwsa/Dev/HftEcosystem/test/common/time_util_test[1]_tests.cmake")
+  include("/home/rwsa/Dev/HftEcosystem/test/common/time_util_test[1]_tests.cmake")
+else()
+  add_test(time_util_test_NOT_BUILT time_util_test_NOT_BUILT)
+endif()
