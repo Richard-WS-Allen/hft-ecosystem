@@ -1,5 +1,6 @@
 # hft-ecosystem
-High Frequency Trading ecosystem of low-latency C++ libraries
+High Frequency Trading ecosystem of low-latency C++ libraries.
+Building this library while working through examples from [Building Low Latency Applications with CPP](https://github.com/PacktPublishing/Building-Low-Latency-Applications-with-CPP) and reading the accompanying book.
 
 ## Common
 A library of utilities for use in the upcoming low-latency HFT ecosystem. Contains thread and clock utilities.
